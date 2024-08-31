@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1>Wellness Chatbot</h1>
+        </header>
+        <main class="chat-main">
+            <div class="chat-window" id="chat-window">
+                <!-- Messages will be dynamically added here -->
+            </div>
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="How are you feeling today?">
+                <button id="send-button">Send</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal for Mental Health Indicators -->
+    <div id="indicator-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Mental Health Indicators</h2>
+            <p>Select how you're feeling to help us provide better support:</p>
+            <div class="indicators">
+                <button class="indicator-button" data-feeling="mental fatigue">😴 Mental Fatigue</button>
+                <button class="indicator-button" data-feeling="emotional stress">😟 Emotional Stress</button>
+                <button class="indicator-button" data-feeling="headache">🤕 Headache</button>
+                <button class="indicator-button" data-feeling="anxiety">😰 Anxiety</button>
+                <!-- Add more indicators as needed -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
